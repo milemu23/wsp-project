@@ -1,0 +1,83 @@
+/* 
+ ================================================================================
+-WSP COMPONENT LIBRARY STYLESHEET
++MICHELLE MUNKSGARD - WSP COMPONENT LIBRARY STYLESHEET
+ ================================================================================ */
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    background:url(../images/header.jpg) 28px 0px no-repeat, url(../images/topLeft.jpg) no-repeat, url(../images/leftSide.jpg) repeat-y, url(../images/topRight.jpg) repeat-x;
+    width: 100%;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.pinkLabel {
+    height: 33px;
+    background-color: #f96a95;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 5px 0;
+    padding: 7px 0 5px 15px;
+}
+
+.grayLabel {
+    background-color: #3f3f3f;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 7px 0 5px 15px;
+}
+ 
+ 
+ 
+ /* HEADER SPECIFIC ======================================== */
+#logo {
+    margin: 87px 0px 0px 80px;
+}
+ 
+ /* ABOUT SPECIFIC ======================================== */
+#about {
+    max-width: 26%;
+    line-height: 1.2em;
+    margin: 40px 0px 0px 76px;
+    float: left;
+}
+
+/* FOOTER ======================================== */
+footer {
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg);
+    bottom: 0px;
+    position: fixed;
+    margin:0px 0px 100px -80px;
+    color: #3f3f3f ;
+}
+
+/* COMPONENTS SPECIFIC ======================================== */
+section#right { 
+    width: 60%;
+    float: left;
+    margin: 0px 0px 0px 30px;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    background-color: #f96a95;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #666666;
+    color: #f96a95;
+}
+ 
+/* COMPONENTS SPECIFIC ======================================== */ 
