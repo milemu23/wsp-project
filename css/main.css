@@ -16,24 +16,31 @@ img {
     max-width: 100%;
 }
 
-
-.pinkLabel {
-    height: 33px;
-    background-color: #f96a95;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    font-weight: 500;
-    margin: 5px 0;
-    padding: 7px 0 5px 15px;
+p {
+    padding: 10px 0;
 }
 
-.grayLabel {
-    background-color: #666;
-    color: #fff;
+h2 {
     text-transform: uppercase;
     font-size: 1.2em;
     font-weight: 500;
     padding: 7px 0 5px 15px;
+    margin-bottom: 5px;
+}
+
+aside > h2 {
+    background-color: #f96a95;
+}
+
+article > h2 {
+    background-color: #666;
+    color: #fff;    
+}
+
+article > h3 {
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 10px 0 0 0;
 }
 
 a {
@@ -49,12 +56,12 @@ a:hover {
  
  
  /* HEADER SPECIFIC ======================================== */
-#logo {
+header img {
     margin: 87px 0px 0px 80px;
 }
  
  /* ABOUT SPECIFIC ======================================== */
-#about {
+aside {
     max-width: 23%;
     margin: 40px 0px 0px 76px;
     float: left;
@@ -73,7 +80,7 @@ footer {
 }
 
 /* COMPONENTS SPECIFIC ======================================== */
-section#right { 
+section { 
     width: 60%;
     float: left;
     margin: 40px 0px 0px 5%;
@@ -82,22 +89,30 @@ section#right {
 article {
     background: #eee;
     padding: 15px;
-    margin: 0 0 15px 0;
-    
+    margin: 0 0 15px 0;   
 }
 
-button {
+article img {
+    width:100%;
+}
+
+a[href^="components"] {
     width: 200px;
     height: 40px;
+    display: block;
     background-color: #f96a95;
     color: #fff;
     text-transform: uppercase;
     font-size: 1em;
     border: #fff 1px solid;
     border-radius: 3px;
+    text-align: center;
+    line-height: 2.4em;
+    cursor: hand;
+    margin: 10px 0;
 }
 
-button:hover {
+a[href^="components"]:hover {
     background-color: #666666;
     color: #f96a95;
     border: #f96a95 1px solid;
