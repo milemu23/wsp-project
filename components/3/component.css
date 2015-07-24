@@ -54,7 +54,7 @@ section#posts {
     background: #222;
 }
 
-section#sidebar {
+aside {
     width: calc(100%/ 3 * 1);
 }
 
@@ -103,8 +103,3 @@ div {
     top: 90%;
 }
 
-article::after {
-    content: "";
-    display: table;
-    clear: both;
-}
