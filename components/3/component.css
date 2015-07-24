@@ -2,7 +2,109 @@
 ================================================================================
 COMPONENT STYLESHEET
 ================================================================================ */
+html {font-size: 62.5%; }
+body {
+    max-width: 960px;
+    background: #000;
+    font: 400 1.6rem/1.4 'PT Sans', sans-serif;
+    color: #ccc;
+}
 
-/* HEADER ======================================== */
+a {
+    color: #fff;
+}
 
-/* HEADER ======================================== */
+a:hover {
+    color: #0cf2e1;
+}
+
+h1, h2, h3 {
+    font-family:'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 a {
+    font-size: 3rem;
+    color: #0cf2e1;
+}
+
+h2 a:hover {
+    color: #ccc;
+}
+
+h3 a {
+    font-size: 2rem;
+    color: #ccc;
+}
+
+h3 a:hover {
+    color: #0cf2e1;
+}
+
+
+/* SECTIONS ======================================== */
+
+section#posts {
+    width: calc(100%/ 3 * 2);
+    margin-left: 1rem;
+    background: #222;
+}
+
+section#sidebar {
+    width: calc(100%/ 3 * 1);
+}
+
+section > h1 {
+    padding: 2rem 0;
+}
+
+article {
+    position: relative;
+    background: #1b1b1b;
+}
+
+article h2 {
+    padding: 0 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    display: block;
+    padding-left: 1.5rem;
+    background: #000; 
+}
+
+li {
+    display: inline-block;
+    background: #1b1b1b;
+}
+
+li a {
+    padding: 0 1rem;
+}
+
+li#current a {
+    color: #0cf2e1;
+    background: #222;
+}
+
+div {
+    background: rgba(34, 34, 34, .9);
+    position: absolute;
+    width: 90%;
+    right: 0;
+    top: 90%;
+}
+
+article::after {
+    content: "";
+    display: table;
+    clear: both;
+}
