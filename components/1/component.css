@@ -2,11 +2,145 @@
 ================================================================================
 COMPONENT STYLESHEET
 ================================================================================ */
+html { font-size: 62.5%; }
 body {
+    background: #2cbae7;
+    color: #fff;
+    font: 1.6em 'Open Sans', sans-serif;
+}
+
+a {
+    color: #fff;
+}
+
+h1 {
+    font: 3.2rem 'Libre Baskerville', serif;
 }
 
 nav {
-    
+    font: 1rem;
+}
+
+nav ul {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    padding-left: calc(100% / 12);
+    height: 100%;
+}
+
+nav li {
+    font-size: 1rem;
+    display: inline-block;
+    float: left;
+    padding: .8rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: calc(100% / 12 * 1.5);
+    border-left: 1px solid #fff;
+}
+
+nav li:nth-child(3) {
+    border-right: 1px solid #fff;
+}
+
+nav li:nth-child(4), nav li:nth-child(5) {
+    float: right;
+    border: none;
+    width: calc(100% / 12 * 1.5);
+}
+
+nav #current {
+    background:  #fff;
+}
+
+nav #current a {
+    color: #2cbae7;
 }
 
 /* HEADER ======================================== */
+article {
+    width: 50%;
+    float: left;
+    padding: 5rem 10rem;
+    position: relative;
+}
+img[alt^="Solo"] {
+    height: 98px;
+    margin-bottom: 3rem;
+}
+
+article > p {
+    display: block;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    float: right;
+    padding: .3rem 0 .5rem;
+    margin-top: 15rem;
+    cursor: pointer;
+}
+
+article > p a {
+    color: #2cbae7;
+    padding: 0 6.2rem; 
+    font-size: 1.2rem;
+    text-transform: uppercase; 
+}
+
+h1 + p {
+    background: url(images/arrowDown.svg) no-repeat;
+    margin: 50px 0;
+    float: left;
+    text-indent: -9999px;
+}
+
+article ul {
+    border-top: 1px solid #fff;
+    margin-top: 2rem;
+    float: right;
+    padding-top: 2rem;
+    clear: right;
+}
+
+article li {
+    display: inline-block;   
+    margin-right: 1.5rem;
+}
+
+article li:last-child {
+    margin-right: 0;
+}
+
+article li a {
+    display: block; 
+    width: 3rem;
+    height: 3rem;
+    background: #ccc;
+    text-indent: -9999px;
+}
+
+a[href*="dribbble"] {
+    background: url(images/dribbble.svg) no-repeat;
+    background-size: 3rem;
+}
+
+a[href*="pinterest"] {
+    background: url(images/pinterest.svg) no-repeat;
+    background-size: 3rem;
+}
+
+a[href*="linkedin"] {
+    background: url(images/linkedin.svg) no-repeat;
+    background-size: 3rem;
+}
+
+a[href*="twitter"] {
+    background: url(images/twitter.svg) no-repeat;
+    background-size: 3rem;
+}
+
+a[href*="facebook"] {
+    background: url(images/facebook.svg) no-repeat;
+    background-size: 3rem;
+}
