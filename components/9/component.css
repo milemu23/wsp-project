@@ -2,7 +2,73 @@
 ================================================================================
 COMPONENT STYLESHEET
 ================================================================================ */
+html{ font-size: 62.5% }
+body {
+    background: #fff;
+    font: 400 italic 1.6rem/1.4 'Open Sans', sans-serif;
+    width: 100%;
+    color: #fff;
+}
 
-/* HEADER ======================================== */
+/* SECTION ======================================== */
+section {
+    background: #38373c;
+    width: 100%;
+    margin: 3rem 0;
+}
 
-/* HEADER ======================================== */
+
+section > p {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    width: 50%;
+    padding: 5rem 7rem 5rem 12rem;
+    float: left;
+}
+
+section > p:before {
+   color: #ea4e35;
+    content: "\f003";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    float: left;
+    padding-right: 2rem;
+    line-height: 3rem;
+}
+
+form {
+    width: 50%;
+    float: left;
+    padding-top: 3rem;
+}
+
+form > p > input{
+    width: calc(100% / 3 * 1.5);
+    float: left;
+    margin-right: 2rem;;
+    background: #2a292e;
+    height: 5rem;
+    display: block;
+    font-size: 1.2rem;
+    padding: 3.5rem 2rem;
+}
+
+form > p > input[type="submit"]{
+    width: calc(100% / 3 * .6);
+    background: #ea4e35;;
+    height: 5rem;
+    color: #fff;
+    display: block;
+    font-size: 1.4rem;
+    float: left;
+    padding: 2.7rem 1rem 4.2rem;
+    text-transform: uppercase;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
