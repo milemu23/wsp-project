@@ -2,13 +2,17 @@
 ================================================================================
 COMPONENT STYLESHEET
 ================================================================================ */
+
+
 html {font-size: 62.5%; }
 body {
     max-width: 960px;
+    width: 100%;
     background: #000;
     font: 400 1.6rem/1.4 'PT Sans', sans-serif;
     color: #ccc;
     height: 100%;
+    margin: 0 auto;
 }
 
 a {
@@ -64,36 +68,40 @@ section > h1 {
 }
 
 article {
-    position: relative;
     background: #1b1b1b;
     height: auto;
+    position: relative;
     
 }
 
 article h2 {
-    padding: 0 1rem;
+    padding: 0 1rem 2rem;
+}
+
+article > div >  p {
+    padding: 0 4rem 2rem 1rem;
 }
 
 img {
     width: 100%;
 }
 
-ul {
+section > ul {
     display: block;
     padding-left: 1.5rem;
     background: #000; 
 }
 
-li {
+section > ul > li {
     display: inline-block;
     background: #1b1b1b;
 }
 
-li a {
+section > ul > li a {
     padding: 0 1rem;
 }
 
-li#current a {
+section > ul > li#current a {
     color: #0cf2e1;
     background: #222;
 }
@@ -106,8 +114,65 @@ div {
     top: 90%;
 }
 
-article::after, div::after {
-    content: " ";
+div > ul {
+    background: rgb(17,17,17)!important;
+    clear: both;
+    width: 100%;
+}
+
+div > ul > li {
+    display: inline-block;
+    padding-top: 1rem;
+}
+
+div > ul > li a {
+    background: #ccc;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    text-indent: -9999px;
+}
+
+div > ul > li:nth-child(5) {
+    color: #0cf2e1;
+}
+
+div > ul > li:nth-child(6) {
+    color: #666;
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+div > ul > li:last-child {
+    float: right;
+    position: relative;
+    padding-top: 0;
+}
+
+div > ul > li:last-child a {
+    background: #0cf2e1;
+    text-align: center;
+    display: inline-block;
+    padding: .8rem 0 3rem 0;
+    font-style: italic;
+    font-size:  1.5rem;
+    text-indent: 0px;
+    width: 15rem;
+    border-bottom: .5rem solid #067a71;s
+}
+
+div > ul > li:last-child a::before {
+    content: "\f075";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-decoration: inherit;
+    padding-right: .5rem;
+}
+
+div > ul::after {
+    content: "";
     display: table;
     clear: both;
 }
