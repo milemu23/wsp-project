@@ -26,7 +26,6 @@ nav ul {
     display: inline-block;
     border-bottom: 2px solid #fff;
     padding-left: calc(100% / 12);
-    height: 100%;
 }
 
 nav li {
@@ -59,7 +58,7 @@ nav #current a {
 }
 
 /* HEADER ======================================== */
-article {
+section {
     width: 50%;
     float: left;
     padding: 5rem 10rem;
@@ -70,7 +69,7 @@ img[alt^="Solo"] {
     margin-bottom: 3rem;
 }
 
-article > p {
+section > p {
     display: block;
     background: #fff;
     border-radius: 5px;
@@ -81,7 +80,7 @@ article > p {
     cursor: pointer;
 }
 
-article > p a {
+section > p a {
     color: #2cbae7;
     padding: 0 6.2rem; 
     font-size: 1.2rem;
@@ -95,7 +94,7 @@ h1 + p {
     text-indent: -9999px;
 }
 
-article ul {
+section ul {
     border-top: 1px solid #fff;
     margin-top: 2rem;
     float: right;
@@ -103,16 +102,16 @@ article ul {
     clear: right;
 }
 
-article li {
+section li {
     display: inline-block;   
     margin-right: 1.5rem;
 }
 
-article li:last-child {
+section li:last-child {
     margin-right: 0;
 }
 
-article li a {
+section li a {
     display: block; 
     width: 3rem;
     height: 3rem;
