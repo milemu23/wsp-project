@@ -2,7 +2,240 @@
 ================================================================================
 COMPONENT STYLESHEET
 ================================================================================ */
+html { font-size: 62.5%; }
+body {
+    background: #f9f9f9;
+    max-width: 960px;
+    font-size: 1.6rem;
+    margin: 3rem auto;
+    font-family: sans-serif;
+}
+
 
 /* HEADER ======================================== */
 
-/* HEADER ======================================== */
+header {
+    background: #f5f5f5;
+    width: 100%;
+}
+
+nav li a {
+    display: block; 
+    width: 4rem;
+    height: 3rem;
+    text-indent: -9999px;
+    float: left;
+    border: 1px #999 solid;
+    border-radius: 3px;
+}
+
+nav li a:active {
+    display: block; 
+    width: 4rem;
+    height: 3rem;
+    text-indent: -9999px;
+    float: left;
+    border: 1px #999 solid;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, .25), 0 1px 0 #fff;
+}
+
+nav ul ul {
+    float: right;
+    width: 20rem;
+    display: inline-block;
+}
+
+nav ul ul li {
+    float: right;
+}
+
+a[href*="twitter"] {
+    background: url(images/twitter.png) center center no-repeat #eee;
+    background-size: 2rem;
+}
+
+a[href*="soundcloud"] {
+    background: url(images/sound-cloud.ico) center center no-repeat #eee;
+    background-size: 2rem;
+}
+
+a[href*="facebook"] {
+    background: url(images/facebook.png) center center no-repeat #eee;
+    background-size: 2rem;
+}
+
+
+a[href*="flickr"] {
+    background: url(images/flickr.png) center center no-repeat #eee;
+    background-size: 2rem;
+}
+
+
+a[href*="tumblr"] {
+    background: url(images/tumblr.png) center no-repeat #eee;
+    background-size: 2rem;
+}
+
+a[href*="youtube"] {
+    background: url(images/youtube.png) center center no-repeat #eee;
+    background-size: 2rem;
+}
+
+a[href*="timeline"] {
+    background: url(images/spine.png) center center no-repeat #eee;
+    background-size: 2rem;
+}
+
+
+a[href*="grid"] {
+    background: url(images/columns.png) center no-repeat #eee;
+    background-size: 2rem;
+}
+
+a[href*="list"] {
+    background: url(images/one_column.png) center center no-repeat #eee;
+    background-size: 2rem;
+}
+
+header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* SECTION ======================================== */
+
+section {
+    width: 95%;
+}
+
+article {
+    border: 1px #999 solid;
+    width: 50%;
+    margin: 2rem 0;
+    border-radius: 2px;
+}
+
+article header, article footer {
+    background: #ececec;   
+    padding: 3%;
+}
+
+article header {
+    border-bottom: 1px dashed #999;
+}
+
+article footer {
+    border-top: 1px dashed #999;
+}
+
+article h2 {
+    text-transform: uppercase;
+    color: #999;
+    font-size: 1.4rem;
+    width: 200px;
+    float: left;
+    display: block;
+}
+
+img[alt*="Social"] {
+    float: left;
+    padding-right: 5%; 
+    display: inline-block;
+    width: 4rem;
+}
+
+img[alt*="Attachment"] {
+    float: right;
+    display: inline-block;
+    width: 2rem;
+}
+
+article p {
+    padding: 5%;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+}
+
+article ul {
+    padding: 0 5% 5% 5%;   
+}
+
+article ul li a {
+    font-size: 1.2rem;
+    color: #666;
+    width: 100px;
+    margin-left: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    float: left;
+    padding-right: 3%; 
+}
+
+article ul::after {
+    content: "";
+    display:table;
+    clear: both;
+}
+
+a[href*="reply"]::before {
+    content: url(images/reply.png) left no-repeat;
+    background-size: 3rem;
+    width: 3rem;
+    margin-right: 3%;
+}
+
+a[href*="retweet"]::before {
+    content: url(images/retweet.png) no-repeat;
+    background-size: 3rem;
+    width: 3rem;
+    margin-right: 3%;
+}
+
+a[href*="favorite"]::before {
+    content: url(images/favorite.png) no-repeat;
+    background-size: 3rem;
+    width: 3rem;
+    margin-right: 3%;
+}
+
+/* FOOTER ======================================== */
+article footer li a {
+    display: inline-block; 
+    width: 3rem;
+    height: 3rem;
+    text-indent: -9999px;
+    float: right;
+    margin-left: 1rem;
+}
+
+a[href*="facebook.com"] {
+    background: url(images/facebook-1.png) center center no-repeat #eee;
+    background-size: 2rem;
+}
+
+a[href*="twitter.com"] {
+    background: url(images/twitter-1.png) center center no-repeat #eee;
+    background-size: 2rem;
+}
+
+footer ul {
+    padding: 0;
+}
+
+ footer p {
+    font-size: 1.2rem;
+    color: #999;
+    width: 200px;
+    float: left;
+    display: block;
+    padding: 0;
+ }
+
+ footer p::before {
+     content: url(images/clock.png) no-repeat;
+     padding-right: 1rem;
+ }
