@@ -26,8 +26,8 @@ section > p {
     float: left;
 }
 
-section > p:before {
-   color: #ea4e35;
+section > p::before {
+    color: #ea4e35;
     content: "\f003";
     font-family: FontAwesome;
     font-style: normal;
@@ -71,4 +71,8 @@ section::after {
     content: "";
     display: table;
     clear: both;
+}
+
+label {
+    display: none;
 }

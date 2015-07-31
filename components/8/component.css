@@ -47,13 +47,11 @@ nav, form {
     display: block;
     float: left;
     padding: 2% 7%;
-    padding-bottom: 1000em;
-    margin-bottom: -1000em;
 }
 
 form {
     background-color: #e01204;
-    padding: 2% 2% 1000em 2%;
+    padding: 2%;
 }
 
 form h2 {
