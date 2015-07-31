@@ -3,6 +3,125 @@
 COMPONENT STYLESHEET
 ================================================================================ */
 
-/* HEADER ======================================== */
+/* FOOTER ======================================== */
+html { font-size: 62.5%; 
+        width: 100%;}
+body {
+    background-color: #383838;
+    font: 1.6rem sans-serif;
+    max-width: 960px;
+    margin: 0 auto;
+}
 
-/* HEADER ======================================== */
+footer {
+    width: 100%;
+    overflow: auto;
+}
+
+footer h4, footer h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+
+
+input {
+    width: 100%;   
+    padding: 8%;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+input[type="submit"] {
+    background: #eee;
+    font-weight: bold;
+    color: #888;
+    margin-bottom: 2rem;
+}
+
+nav, form {
+    width: calc(100% / 4);
+    display: block;
+    float: left;
+    padding: 2% 7%;
+    padding-bottom: 1000em;
+    margin-bottom: -1000em;
+}
+
+form {
+    background-color: #e01204;
+    padding: 2% 2% 1000em 2%;
+}
+
+form h2 {
+   font-size: 1.5rem;
+}
+
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer li a {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+    color: #888;
+}
+
+footer:last-child {
+    width: 100%;
+    background: #2c2c2c;
+    color: #888;
+    font-size: .6rem;
+    padding: 1rem 0rem;
+}
+
+footer:last-child p {
+ padding-left: 10%;   
+}
+    
+a.home {
+    color: #e01204;
+}
+
+form li a {
+    display: inline-block; 
+    float: left;
+    width: 2rem;
+    height: 2rem;
+    padding-right: 2.5rem;
+    background: #000;
+    text-indent: -9999px;
+    margin-bottom: 6rem;
+}
+
+a[href*="twitter"] {
+    background: url(images/twitter.svg) no-repeat;
+    background-size: 2rem;
+    color: rgba(255,255,255, .6);
+    opacity: .6;
+}
+
+a[href*="facebook"] {
+    background: url(images/facebook.svg) no-repeat;
+    background-size: 2rem;
+    opacity: .6;
+}
+
+a[href*="youtube"] {
+    background: url(images/youtube.svg) no-repeat;
+    background-size: 2rem;
+    opacity: .6;
+}
+
+
+a[href*="google"] {
+    background: url(images/google.svg) no-repeat;
+    background-size: 2rem;
+    opacity: .6;
+}
