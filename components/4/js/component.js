@@ -1,6 +1,6 @@
 $(function() {
-    
-    $("button").click(function() {
-        $('form').hide();
-    }); 
+    $('#dropForm').on('click', function() {
+        console.log('button');
+        $(form).slideToggle();
+    })
 });

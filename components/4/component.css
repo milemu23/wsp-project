@@ -27,6 +27,12 @@ section {
     margin: 0 auto;
 }
 
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 section > p {
     padding: 2rem;
 }
@@ -59,6 +65,7 @@ button p::before {
 form {
     width: 90%;
     margin: 0 auto;
+    display: none;
 }
 
 form p {
