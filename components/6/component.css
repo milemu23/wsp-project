@@ -2,7 +2,128 @@
 ================================================================================
 COMPONENT STYLESHEET
 ================================================================================ */
+html { font-size: 62.5%; }
 
-/* HEADER ======================================== */
+body {
+    font: 1.6rem/1.4 'Lato', sans-serif;
+}
 
-/* HEADER ======================================== */
+/* SECTION ======================================== */
+
+section {
+    width: 100%;
+}
+
+h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #134c91;
+    font-weight: 300;
+    padding-bottom: 3rem;
+}
+
+article {
+    width: 40%;
+    float: left;
+    padding: 1%;
+}
+
+img {
+    width:  100%;
+}
+
+p {
+    font-size: 1.2rem;   
+}
+
+ul {
+ width: 100%;
+}
+
+ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+li a {
+    color: #fff;
+    display: block;
+    float: left;
+    width: calc(100% / 7 * 2);
+    font-size: 1.3rem;
+    padding: 1rem;
+    font-weight: 300;
+    text-align: center;
+    margin-right: 2px;
+}
+
+li p {
+ float: left;   
+    padding-right: 3rem;
+    text-align: center;
+    
+}
+
+li p span {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #eee;
+    text-align: center;
+    float: left;
+    clear: both;
+}   
+
+button {
+    color: #fff;
+    background: #ddd;
+    display: block;
+    float: left;
+    font-size: 3rem;
+    line-height: 0;
+    padding: 1.5rem 1rem 2.1rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+a[href*="facebook"] {
+	background-color: #2b4170; /* fallback color */
+	background: -moz-linear-gradient(top, #3b5998, #2b4170);
+	background: -ms-linear-gradient(top, #3b5998, #2b4170);
+	background: -webkit-linear-gradient(top, #3b5998, #2b4170);
+	border: 1px solid #2b4170;
+	text-shadow: 0 -1px -1px #1f2f52;
+}
+
+a[href*="facebook"]::before {
+    content: "\f082";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    padding-right: 1rem; 
+    width: 3rem;
+    height: 3rem;  
+}
+
+a[href*="twitter"]::before {
+    content: "\f099";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    padding-right: 1rem; 
+    width: 3rem;
+    height: 3rem;  
+}
+
+a[href*="twitter"] {
+ 	background-color: #0081ce; /* fallback color */
+	background: -moz-linear-gradient(top, #00aced, #0081ce);
+	background: -ms-linear-gradient(top, #00aced, #0081ce);
+	background: -webkit-linear-gradient(top, #00aced, #0081ce);
+	border: 1px solid #0081ce;
+}
+
+article > p {
+    padding: 5% 0;
+}
