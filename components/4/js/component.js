@@ -1,6 +1,5 @@
 $(function() {
-    $('#dropForm').on('click', function() {
-        console.log('button');
+    $('button').on('click', function() {
         $(form).slideToggle();
     })
 });
